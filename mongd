@@ -1,0 +1,1 @@
+mongod --dbpath=https://cloud.mongodb.com/v2/5d14d6d7a6f2394af0e5ac21#metrics/replicaSet/5d14d771d5ec1360686153b4/explorer --nojournal

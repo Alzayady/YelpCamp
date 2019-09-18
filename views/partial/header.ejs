@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		   Yelp-Camp
+		</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+		
+		<link rel="stylesheet" type="text/css" href="/stylesheet/main.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default">
+		   <div class="container-fluid">
+			   <div class="navbar-header">
+				   <a class="navbar-brand" href="/"> YelpCamp</a>
+				   
+			   </div>
+			   <div class="collapse navbar-collapse">
+				   <ul class="nav navbar-nav navbar-right">
+					   <% if(!currentUser){ %>
+					   <li> <a href="/login">log in </a> </li>
+					   <li> <a href="/register">sign up </a> </li>
+					   <% }else{ %>
+					   <li> <a><%= nameOfUser %></a></li>
+					   <li> <a href="/logout">log out </a> </li>
+					   <% } %>
+				   </ul>
+			   </div>
+			</div>
+		</nav>
+		
+		<div class="container">
+		<% if(messageError &&messageError.length >0){ %>
+			
+			
+		<div class="alert alert-danger">
+			<%= messageError %>
+		</div>
+			<% }else if(messageSuccess &&messageSuccess.length >0){ %>
+			<div class="alert alert-success">
+			<%= messageSuccess %>
+		</div>
+		<% 	} %>
+			</div>

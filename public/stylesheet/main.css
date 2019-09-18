@@ -1,0 +1,24 @@
+.card{
+	margin:3px;
+}
+.thumbnail img{
+	width:100%;
+}
+.thumbnail{
+	padding:0;
+}
+.thumbnail .caption-full{
+	padding:10px;
+}
+.in{
+	display:inline;
+}
+.thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 250px; 
+}
+#x{
+	width:100%;
+	height:auto
+}

@@ -1,0 +1,1 @@
+mongod --dbpath=mongodb+srv://ahmed:ahmedaymen2014@cluster0-o8glp.mongodb.net --nojournal

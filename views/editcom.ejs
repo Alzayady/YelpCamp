@@ -1,0 +1,23 @@
+<% include ./partial/header %>
+
+<div class="container">
+	<div class="row">
+      <h1 class="text-center"> Edit comment</h1>
+		<div style="width:30%; margin:25px auto ;">
+           <form  action="/campgrounds/<%=id%>/comments/<%=com._id%>?_method=PUT" method="POST">
+	          <div class="form-group">
+	            <input class="form-control"  type="text" name="com" placeholder="text" value="<%=com.text %>">
+	          </div>
+				  <button class="btn btn-default btn-primary btn-block"> submit </button>
+           </form>
+			<a href="/campgrounds/<%=id%>">Go Back  </a>
+        </div>
+	</div>
+</div>
+
+<% include ./partial/footer %> 
+
+		
+	
+	   
+			
